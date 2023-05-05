@@ -14,6 +14,10 @@ app.use(cors());
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
 
+app.get('/', (req, res) => {
+    res.send("hello let's create a moviehub application")
+})
+
 mongoose.connect(process.env.MONGO_URL_STRING)
     .then(
         server.listen(port, () => {
