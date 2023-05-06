@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import http from "http";
 import "dotenv/config";
 import cookieParser from "cookie-parser";
+import routes from "./src/routes/index.js";
 
 const app = express();
 const server = http.createServer(app);
@@ -13,6 +14,8 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
+
+app.use("/api/v1", routes)
 
 app.get('/', (req, res) => {
     res.send("hello let's create a moviehub application")

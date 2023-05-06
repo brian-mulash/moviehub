@@ -1,4 +1,4 @@
-import modelOptions from "./model.options";
+import modelOptions from "./model.options.js";
 import mongoose from "mongoose";
 import crypto, { Hash } from "crypto"
 

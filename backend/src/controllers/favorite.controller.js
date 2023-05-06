@@ -1,8 +1,8 @@
-import responseHandler from "../handlers/response.handler";
+import responseHandler from "../handlers/response.handler.js";
 import favoriteModel from "../models/favorite.model.js";
 
 //add favorites
-const AddFAvorite = async (req, res) => {
+const AddFavorite = async (req, res) => {
     try {
         const isFavorite = await favoriteModel.findOne({
             user: req.user.id,
@@ -62,6 +62,6 @@ const GetFavoritesOfUser = async () => {
 };
 
 export default {
-    GetFavoritesOfUser, AddFAvorite, RemoveFavorite
+    GetFavoritesOfUser, AddFavorite, RemoveFavorite
 };
 
