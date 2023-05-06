@@ -124,6 +124,7 @@ Route.post(
     body("mediaRate")
         .exists().withMessage("media-rate is required"),
 
+    requestHandler.validate,    
     favoriteController.AddFavorite
 );
 

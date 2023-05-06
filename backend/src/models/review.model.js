@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import modelOptions from "./model.options";
+import modelOptions from "./model.options.js";
 
 
 export default mongoose.model(
@@ -8,7 +8,7 @@ export default mongoose.model(
     mongoose.Schema({
         user: {
             type: Schema.Types.ObjectId,
-            ref: User,
+            ref: "User",
             required: true,
         },
 
