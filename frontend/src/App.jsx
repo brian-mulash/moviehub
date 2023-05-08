@@ -1,11 +1,10 @@
-
-import './App.css'
+import './scss/App.scss'
 
 function App() {
 
   return (
     <>
-
+      Let's build a movie app
     </>
   )
 }
