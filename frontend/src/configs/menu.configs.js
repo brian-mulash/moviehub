@@ -1,5 +1,5 @@
 import {
-   HiOutlineHome,
+   MdOutlineHome,
    MdOutlineSlideshow,
    MdOutlineLiveTv,
    MdOutlineFavoriteBorder,
@@ -12,7 +12,7 @@ const main = [
    {
       display: "home",
       path: "/",
-      icon: HiOutlineHome,
+      icon: MdOutlineHome,
       state: "home"
    },
 
@@ -21,13 +21,6 @@ const main = [
       path: "/movie",
       icon: MdOutlineSlideshow,
       state: "movie"
-   },
-
-   {
-      display: "tv series",
-      path: "/tv",
-      icon: MdOutlineLiveTv,
-      state: "tv"
    },
 
    {
