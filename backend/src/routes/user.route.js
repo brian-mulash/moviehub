@@ -62,7 +62,7 @@ Route.post(
 
 /* update user password */
 Route.put(
-    "/update-password",
+    "/password-update",
 
     tokenMiddleware.auth,
     body("password")
