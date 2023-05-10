@@ -69,14 +69,15 @@ const routes = [
    },
 
    {
-      path: "/mediaType/:mediaId",
-      element: <MediaDetail/>
+      path: "/:mediaType",
+      element: <MediaList/>
    },
 
    {
-      path: "/mediaType",
-      element: <MediaList/>
-   }
+      path: "/:mediaType/:mediaId",
+      element: <MediaDetail/>
+   },
+
 ];
 
 export default routes;

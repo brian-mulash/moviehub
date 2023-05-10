@@ -1,4 +1,5 @@
 import { Typography, useTheme } from "@mui/material" 
+import LogoImg from "../../assets/play-button (1).png"
 
 const Logo = () => {
 
